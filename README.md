@@ -2,8 +2,8 @@
  A Global GDP(PPP) map, CONTAINS map vision, per capital, growth line and sector distruption from 1990 - 2024
 The project delivers a fully interactive Global GDP & Sector Composition Dashboard built with the R Shiny framework. It integrates multiple data science tools to ingest, transform and visualise the World Bank’s World Development Indicators (WDI) dataset. Data are read from local CSV files (in a relative data directory) to ensure reproducibility, and the script dynamically standardises column names to handle variations across WDI releases. The application filters out aggregated regions, keeping only sovereign countries, and reshapes wide time‑series tables into long format via the tidyr package. It computes GDP in purchasing‑power‑parity terms, GDP per capita, and annual real GDP growth. For sector composition, it implements a four‑step fallback: using percentage shares when available, else deriving shares from current‑price or constant‑price totals and GDP, and finally from the sum of sector totals. This ensures robust behaviour even when certain indicators are missing. The dashboard’s UI adopts a modern Bootstrap theme via bslib and offers two main tabs. The first tab displays a 2D choropleth map using leaflet (with a custom legend and Top‑1/Top‑2 highlights) and an optional 3D globe rendered with threejs. It also shows a dynamic bar chart of the top GDP‑per‑capita countries using Plotly. The second tab compares GDP growth trajectories using a paginated line chart and visualises sector composition as a stacked area or bar chart. Users can filter by region, select specific countries, adjust time ranges, switch between map modes, and download filtered sector data as a CSV. Overall, the project demonstrates strong skills in data wrangling, geospatial joins, reactive programming and interactive visualisation, resulting in a polished tool that allows policymakers, students and analysts to explore global economic trends and sectoral structures with ease.
 
-![Dashboard Screenshot](picture/9b4c211a3de9fbde1d4e317e98a7887.png)
-![Dashboard Screenshot](picture/9b4c211a3de9fbde1d4e317e98a7887.png)
-![Dashboard Screenshot](picture/9b4c211a3de9fbde1d4e317e98a7887.png)
-![Dashboard Screenshot](picture/9b4c211a3de9fbde1d4e317e98a7887.png)
-![Dashboard Screenshot](picture/9b4c211a3de9fbde1d4e317e98a7887.png)
+![Dashboard Screenshot](picture/Figure1.png)
+![Dashboard Screenshot](picture/Figure2.png)
+![Dashboard Screenshot](picture/Figure3.png)
+![Dashboard Screenshot](picture/Figure4.png)
+![Dashboard Screenshot](picture/Figure5.png)
